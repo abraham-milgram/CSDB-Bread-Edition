@@ -1,58 +1,59 @@
-Query 1:
+/*Query 1:*/
 SELECT Last_Name, First_Name, Department, Hourly_Rate
 FROM Salaries
-ORDER BY First_Name ASC
+ORDER BY First_Name ASC;
 
-Query 2:
+/*Query 2:*/
 SELECT *
 FROM Salaries
 ORDER BY CAST(Hourly_Rate AS FLOAT) DESC
-LIMIT 5
+LIMIT 5;
 
-Query 3:
+/*Query 3:*/
 SELECT *
 FROM Salaries
-ORDER BY CAST(Hourly_Rate AS FLOAT) DESC
+ORDER BY CAST(Hourly_Rate AS FLOAT) DESC;
 
-Query 4:
+/*Query 4:*/
 SELECT *
 FROM Salaries
-ORDER BY Department, CAST(Hourly_Rate AS FLOAT) DESC
+ORDER BY Department, CAST(Hourly_Rate AS FLOAT) DESC;
 
-Query 5:
+/*Query 5:*/
 SELECT AVG(Hourly_Rate)
-FROM Salaries
+FROM Salaries;
 
-Query 6:
+/*Query 6:*/
 SELECT *
 FROM Salaries
-GROUP BY Department
+GROUP BY Department;
 
-Query 7:
+/*Query 7:*/
 SELECT *
 FROM Salaries
-GROUP BY Department
+GROUP BY Department;
 
-Query 8:
+/*Query 8:*/
 SELECT COUNT(*)
 FROM Salaries
-WHERE Department = "Parks & Recreation"
+WHERE Department = "Parks & Recreation";
 
-Query 9:
+/*Query 9:*/
 SELECT Department, COUNT(*)
 FROM Salaries
-GROUP BY Department
+GROUP BY Department;
 
-Query 10:
+/*Query 10:*/
 SELECT Job_Title
 FROM Salaries
-GROUP BY Job_Title
+GROUP BY Job_Title;
 
-Query 11:
+/*Query 11:*/
 SELECT *
 FROM Salaries
-WHERE Job_Title LIKE "Pol Ofcr%"
-Query 12:
+WHERE Job_Title LIKE "Pol Ofcr%";
+
+/*Query 12:*/
 SELECT AVG(Hourly_Rate)
 FROM Salaries
-WHERE Department = "Information Technology"
+WHERE Department = "Information Technology";
